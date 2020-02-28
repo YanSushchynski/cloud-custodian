@@ -23,3 +23,6 @@ jobs:
       - name: Execute bazel test //tools/c7n_kube/tests
         run: |
           docker exec -t baz bazel --output_user_root=/tmp/output_build test //tools/c7n_kube/tests
+      - name: Execute bazel test //tools/c7n_mailer/tests
+        run: |
+          docker exec -t baz bazel --output_user_root=/tmp/output_build test //tools/c7n_mailer/tests
