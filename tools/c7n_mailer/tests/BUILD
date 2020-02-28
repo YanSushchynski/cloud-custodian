@@ -1,5 +1,5 @@
 load("//:c7n_py_test.bzl", "c7n_py_test")
-load("@pip_deps//:requirements.bzl", "requirement")
+load("@mailer_py_deps//:requirements.bzl", "requirement")
 
 package(default_visibility = ["//visibility:private"])
 
